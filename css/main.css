@@ -988,3 +988,11 @@ body {
 	     -o-transition: background 800ms ease;
 	        transition: background 800ms ease;
 }
+.inicio .state-background {
+	background: url(../images/bg-inicio.jpg) 50% -100px;
+	background-size: 120%;
+}
+.inicio.dois .state-background {
+	background: url(../images/bg-inicio.jpg) 50% -200px;
+	background-size: 100%;
+}
