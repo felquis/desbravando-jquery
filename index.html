@@ -51,6 +51,7 @@
                         <li>O básico do básico</li>
                         <li>Encadeie seus métodos</li>
                         <li>Comece certo, use uma CDN</li>
+                        <li>Tarefas que o jQuery nos ajuda</li>
                     </ul>
                 </section>
 
@@ -223,6 +224,67 @@ $('#meuId').find('.content').animate({opacity : 1}).end()
                     </code></pre>
                     <p><a href="https://github.com/h5bp/html5-boilerplate/blob/master/index.html#L41" target="_blank" title="Vejam este código na linha 41 da index.html do H5BP">Vejam este código na linha 41 da index.html do H5BP</a></p>
                 </section>
+
+            <!-- Tarefas que o jQuery nos ajuda -->
+                <section>
+                    <h2>Testando tipo de dados</h2>
+                </section>
+
+                <section>
+                    <h2>Testando tipo de dados</h2>
+                    <p>Isso é uma tarefa difícil, o jQuery nos ajuda com os seguintes métodos</p>
+                    <ul>
+                        <li>$.inArray</li>
+                        <li>$.isEmptyObject</li>
+                        <li>$.isPlainObject</li>
+                        <li>$.isArray</li>
+                        <li>$.isNumeric</li>
+                        <li>$.isFunction</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ajax</h2>
+                    <p>Ajax com jQuery é muito facil</p>
+                    <pre><code>
+$.ajax({
+    url : 'http://twitter.com/statuses/user_timeline/felquis.json?count=4',
+    dataType : 'jsonp',
+    success : function (res) {
+        $.each(res, function (i, e) {
+            alert(e.text);
+        });
+    }
+});
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Bom...</h2>
+                </section>
+
+                <section>
+                    <h2>Meus slides estão acabando</h2>
+                </section>
+
+                <section>
+                    <h2>Tarefa para casa</h2>
+                    <ul>
+                        <li><a href="http://docs.jquery.com/Main_Page" title="jQuery API" target="_blank">jQuery API</a></li>
+                        <li><a href="http://herberthamaral.com/jquery-fundamentals-book-pt-BR.pdf" title="fundamentos de jQuery" target="_blank">fundamentos de jQuery</a></li>
+                        <li><a href="http://jquerybrasil.org/" title="jQueryBrasil.org" target="_blank">jQueryBrasil.org</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Perguntas?</h2>
+                    <img src="images/vish.JPG" width="300" alt="" />
+                </section>
+
+                <section data-state="default">
+                    <h1>Fim</h1>
+                    <h3>twitter {<a href="https://twitter.com/felquis" target="_blank" title="@felquis}">@felquis}</a>} / Blog {<a href="http://tutsmais.com.br" target="_blank" title="TutsMais">TutsMais</a>}</h3>
+                </section>
             </div>
 
             <!-- The navigational controls UI -->
@@ -280,6 +342,11 @@ $('#meuId').find('.content').animate({opacity : 1}).end()
             if( window.location.host === 'localhost:1947' ) {
                 head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
             }
+            
+            var _gaq=[['_setAccount','UA-23934923-6'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
         
     </body>
