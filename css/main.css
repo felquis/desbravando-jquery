@@ -987,6 +987,9 @@ body {
 	    -ms-transition: background 800ms ease;
 	     -o-transition: background 800ms ease;
 	        transition: background 800ms ease;
+
+	background-image: url(../images/default.jpg);
+	background-size: 100%;
 }
 .inicio .state-background {
 	background: url(../images/bg-inicio.jpg) 50% -100px;
